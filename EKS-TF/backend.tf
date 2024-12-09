@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket         = "my-eks-terrform-bucket-v1"
-    region         = "ap-south-1"
+    region         = "us-east-1"
     key            = "Tetris-Project/EKS-TF/terraform.tfstate"
     dynamodb_table = "Lock-Files"
     encrypt        = true
